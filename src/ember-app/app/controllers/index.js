@@ -22,7 +22,7 @@ export default Controller.extend({
             link: 'i-i-s-123-заказ-l',
             caption: i18n.t('forms.application.sitemap.заказ.i-i-s-123-заказ-l.caption'),
             title: i18n.t('forms.application.sitemap.заказ.i-i-s-123-заказ-l.title'),
-            icon: 'paperclip',
+            icon: 'briefcase',
             children: null
           }]
         }, {
@@ -34,19 +34,19 @@ export default Controller.extend({
             link: 'i-i-s-123-поставщик-l',
             caption: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-123-поставщик-l.caption'),
             title: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-123-поставщик-l.title'),
-            icon: 'book',
+            icon: 'address card',
             children: null
           }, {
             link: 'i-i-s-123-товар-l',
             caption: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-123-товар-l.caption'),
             title: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-123-товар-l.title'),
-            icon: 'address card',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-123-производитель-l',
             caption: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-123-производитель-l.caption'),
             title: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-123-производитель-l.title'),
-            icon: 'folder open',
+            icon: 'edit',
             children: null
           }]
         }, {
@@ -58,7 +58,7 @@ export default Controller.extend({
             link: 'i-i-s-123-клиент-l',
             caption: i18n.t('forms.application.sitemap.клиенты.i-i-s-123-клиент-l.caption'),
             title: i18n.t('forms.application.sitemap.клиенты.i-i-s-123-клиент-l.title'),
-            icon: 'tags',
+            icon: 'chart bar',
             children: null
           }]
         }, {
@@ -70,7 +70,7 @@ export default Controller.extend({
             link: 'i-i-s-123-менеджер-l',
             caption: i18n.t('forms.application.sitemap.менеджеры.i-i-s-123-менеджер-l.caption'),
             title: i18n.t('forms.application.sitemap.менеджеры.i-i-s-123-менеджер-l.title'),
-            icon: 'calendar',
+            icon: 'folder open',
             children: null
           }]
         }
