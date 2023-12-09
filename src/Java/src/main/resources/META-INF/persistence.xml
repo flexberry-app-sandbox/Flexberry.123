@@ -3,12 +3,12 @@
 	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 		xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistencehttp://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
     <persistence-unit name="Olingo4PG">
+        <class>123.model.Oplata</class>
         <class>123.model.Menedzher</class>
         <class>123.model.Proizvoditel</class>
         <class>123.model.Zakaz</class>
         <class>123.model.Tovar</class>
         <class>123.model.Klient</class>
-        <class>123.model.Oplata</class>
         <class>123.model.Postavshhik</class>
         <class>123.model.Tovary</class>
         <class>123.model.FlexberryAdvLimit</class>

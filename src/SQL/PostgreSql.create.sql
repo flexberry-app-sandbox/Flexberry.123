@@ -3,6 +3,14 @@
 
 
 
+CREATE TABLE Оплата (
+ primaryKey UUID NOT NULL,
+ Способ VARCHAR(1) NULL,
+ Дата TIMESTAMP(3) NULL,
+ Заказ UUID NOT NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE Менеджер (
  primaryKey UUID NOT NULL,
  НомерПаспорта INT NULL,
@@ -51,14 +59,6 @@ CREATE TABLE Клиент (
  Отчество VARCHAR(255) NULL,
  Адрес VARCHAR(255) NULL,
  Логин VARCHAR(255) NULL,
- PRIMARY KEY (primaryKey));
-
-
-CREATE TABLE Оплата (
- primaryKey UUID NOT NULL,
- Способ VARCHAR(1) NULL,
- Дата TIMESTAMP(3) NULL,
- Заказ UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -183,6 +183,9 @@ CREATE TABLE ApplicationLog (
 
 
 
+ ALTER TABLE Оплата ADD CONSTRAINT FK3f43a794990f62802512d8897e81eec1ced9d471 FOREIGN KEY (Заказ) REFERENCES Заказ; 
+CREATE INDEX Index3f43a794990f62802512d8897e81eec1ced9d471 on Оплата (Заказ); 
+
  ALTER TABLE Заказ ADD CONSTRAINT FKa135dc54a8887a65b138ed8c4c001d0933e9981d FOREIGN KEY (Товар) REFERENCES Товар; 
 CREATE INDEX Indexa135dc54a8887a65b138ed8c4c001d0933e9981d on Заказ (Товар); 
 
@@ -197,9 +200,6 @@ CREATE INDEX Index560df43472c65b5f58d17c8a85b51a0aaf0d56ce on Товар (Про
 
  ALTER TABLE Товар ADD CONSTRAINT FK382681e013a7e3a2f2749a33627c8d067d43fed4 FOREIGN KEY (Поставщик) REFERENCES Поставщик; 
 CREATE INDEX Index382681e013a7e3a2f2749a33627c8d067d43fed4 on Товар (Поставщик); 
-
- ALTER TABLE Оплата ADD CONSTRAINT FK3f43a794990f62802512d8897e81eec1ced9d471 FOREIGN KEY (Заказ) REFERENCES Заказ; 
-CREATE INDEX Index3f43a794990f62802512d8897e81eec1ced9d471 on Оплата (Заказ); 
 
  ALTER TABLE Товары ADD CONSTRAINT FK5b29fefc7c219868aa7d28ddd40530a59eabd7f4 FOREIGN KEY (Заказ) REFERENCES Заказ; 
 CREATE INDEX Index5b29fefc7c219868aa7d28ddd40530a59eabd7f4 on Товары (Заказ); 

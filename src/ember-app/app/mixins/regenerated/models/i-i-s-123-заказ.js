@@ -88,8 +88,7 @@ export let defineProjections = function (modelClass) {
       фамилия: attr('Фамилия', { index: 8, hidden: true })
     }, { index: 7, displayMemberPath: 'фамилия' }),
     оплата: hasMany('i-i-s-123-оплата', 'Оплата', {
-      способ: attr('Способ', { index: 0 }),
-      дата: attr('Дата', { index: 1 })
+      
     }),
     товары: hasMany('i-i-s-123-товары', 'Товары', {
       цена: attr('Цена', { index: 0 }),

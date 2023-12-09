@@ -28,9 +28,6 @@ namespace IIS.123
     // *** End programmer edit section *** (Оплата CustomAttributes)
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
-    [View("ОплатаE", new string[] {
-            "Способ as \'Способ\'",
-            "Дата as \'Дата\'"})]
     public class Оплата : ICSSoft.STORMNET.DataObject
     {
         
@@ -139,24 +136,6 @@ namespace IIS.123
                 // *** Start programmer edit section *** (Оплата.Заказ Set end)
 
                 // *** End programmer edit section *** (Оплата.Заказ Set end)
-            }
-        }
-        
-        /// <summary>
-        /// Class views container.
-        /// </summary>
-        public class Views
-        {
-            
-            /// <summary>
-            /// "ОплатаE" view.
-            /// </summary>
-            public static ICSSoft.STORMNET.View ОплатаE
-            {
-                get
-                {
-                    return ICSSoft.STORMNET.Information.GetView("ОплатаE", typeof(IIS.123.Оплата));
-                }
             }
         }
     }

@@ -35,28 +35,7 @@
     }
   ],
   "hasMany": [],
-  "projections": [
-    {
-      "name": "ОплатаE",
-      "modelName": "i-i-s-123-оплата",
-      "attrs": [
-        {
-          "name": "способ",
-          "caption": "Способ",
-          "hidden": false,
-          "index": 0
-        },
-        {
-          "name": "дата",
-          "caption": "Дата",
-          "hidden": false,
-          "index": 1
-        }
-      ],
-      "belongsTo": [],
-      "hasMany": []
-    }
-  ],
+  "projections": [],
   "stored": true,
   "offline": true,
   "external": false

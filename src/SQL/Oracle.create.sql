@@ -2,6 +2,21 @@
 
 
 
+CREATE TABLE "Оплата"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Способ" NVARCHAR2(1) NULL,
+
+	"Дата" DATE NULL,
+
+	"Заказ" RAW(16) NOT NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "Менеджер"
 (
 
@@ -94,21 +109,6 @@ CREATE TABLE "Клиент"
 	"Адрес" NVARCHAR2(255) NULL,
 
 	"Логин" NVARCHAR2(255) NULL,
-
-	 PRIMARY KEY ("primaryKey")
-) ;
-
-
-CREATE TABLE "Оплата"
-(
-
-	"primaryKey" RAW(16) NOT NULL,
-
-	"Способ" NVARCHAR2(1) NULL,
-
-	"Дата" DATE NULL,
-
-	"Заказ" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
 ) ;
@@ -344,6 +344,11 @@ CREATE TABLE "ApplicationLog"
 
 
 
+ALTER TABLE "Оплата"
+	ADD CONSTRAINT "Оплата_FЗаказ_0" FOREIGN KEY ("Заказ") REFERENCES "Заказ" ("primaryKey");
+
+CREATE INDEX "Оплата_IЗаказ" on "Оплата" ("Заказ");
+
 ALTER TABLE "Заказ"
 	ADD CONSTRAINT "Заказ_FТовар_0" FOREIGN KEY ("Товар") REFERENCES "Товар" ("primaryKey");
 
@@ -368,11 +373,6 @@ ALTER TABLE "Товар"
 	ADD CONSTRAINT "Товар_FПостав_3420" FOREIGN KEY ("Поставщик") REFERENCES "Поставщик" ("primaryKey");
 
 CREATE INDEX "Товар_IПоставщик" on "Товар" ("Поставщик");
-
-ALTER TABLE "Оплата"
-	ADD CONSTRAINT "Оплата_FЗаказ_0" FOREIGN KEY ("Заказ") REFERENCES "Заказ" ("primaryKey");
-
-CREATE INDEX "Оплата_IЗаказ" on "Оплата" ("Заказ");
 
 ALTER TABLE "Товары"
 	ADD CONSTRAINT "Товары_FЗаказ_0" FOREIGN KEY ("Заказ") REFERENCES "Заказ" ("primaryKey");

@@ -2,6 +2,19 @@
 
 
 
+CREATE TABLE [Оплата] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Дата] DATETIME  NULL,
+
+	 [Способ] VARCHAR(1)  NULL,
+
+	 [Заказ] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [Менеджер] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
@@ -85,19 +98,6 @@ CREATE TABLE [Клиент] (
 	 [Пароль] VARCHAR(255)  NULL,
 
 	 [Фамилия] VARCHAR(255)  NULL,
-
-	 PRIMARY KEY ([primaryKey]))
-
-
-CREATE TABLE [Оплата] (
-
-	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
-
-	 [Дата] DATETIME  NULL,
-
-	 [Способ] VARCHAR(1)  NULL,
-
-	 [Заказ] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 
