@@ -28,7 +28,7 @@ export default Controller.extend({
             link: 'i-i-s-123-заказ-l',
             caption: i18n.t('forms.application.sitemap.заказ.i-i-s-123-заказ-l.caption'),
             title: i18n.t('forms.application.sitemap.заказ.i-i-s-123-заказ-l.title'),
-            icon: 'phone',
+            icon: 'paperclip',
             children: null
           }]
         }, {
@@ -40,7 +40,7 @@ export default Controller.extend({
             link: 'i-i-s-123-поставщик-l',
             caption: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-123-поставщик-l.caption'),
             title: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-123-поставщик-l.title'),
-            icon: 'building',
+            icon: 'book',
             children: null
           }, {
             link: 'i-i-s-123-товар-l',
@@ -52,7 +52,7 @@ export default Controller.extend({
             link: 'i-i-s-123-производитель-l',
             caption: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-123-производитель-l.caption'),
             title: i18n.t('forms.application.sitemap.справочник-по-товарам.i-i-s-123-производитель-l.title'),
-            icon: 'calendar',
+            icon: 'folder open',
             children: null
           }]
         }, {
@@ -76,6 +76,7 @@ export default Controller.extend({
             link: 'i-i-s-123-менеджер-l',
             caption: i18n.t('forms.application.sitemap.менеджеры.i-i-s-123-менеджер-l.caption'),
             title: i18n.t('forms.application.sitemap.менеджеры.i-i-s-123-менеджер-l.title'),
+            icon: 'calendar',
             children: null
           }]
         }
