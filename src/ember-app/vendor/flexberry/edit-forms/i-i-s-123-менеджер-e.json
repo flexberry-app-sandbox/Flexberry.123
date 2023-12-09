@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Менеджер",
+  "name": "IIS123МенеджерE",
+  "className": "МенеджерE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-123-менеджер",
+      "modelProjection": "МенеджерE"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+﻿{
+  "name": "IIS123Заказ",
+  "modelName": "i-i-s-123-заказ",
+  "className": "Заказ",
+  "nameSpace": "IIS.123",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "доставка",
+      "type": "i-i-s-123-тип-доставки",
+      "flexberryType": "ТипДоставки",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "номерЗаказа",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "клиент",
+      "relatedTo": "i-i-s-123-клиент",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "менеджер",
+      "relatedTo": "i-i-s-123-менеджер",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "товар",
+      "relatedTo": "i-i-s-123-товар",
+      "inverse": null
+    }
+  ],
+  "hasMany": [
+    {
+      "name": "оплата",
+      "relatedTo": "i-i-s-123-оплата",
+      "inverse": "заказ"
+    },
+    {
+      "name": "товары",
+      "relatedTo": "i-i-s-123-товары",
+      "inverse": "заказ"
+    }
+  ],
+  "projections": [
+    {
+      "name": "ЗаказE",
+      "modelName": "i-i-s-123-заказ",
+      "attrs": [
+        {
+          "name": "номерЗаказа",
+          "caption": "Номер заказа",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доставка",
+          "caption": "Доставка",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Свойства",
+          "lookupValueField": "свойства",
+          "relationName": "Товар",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "свойства",
+              "caption": "Свойства",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Товар",
+          "name": "товар",
+          "relatedTo": "i-i-s-123-товар",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Отчество",
+          "lookupValueField": "отчество",
+          "relationName": "Менеджер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "отчество",
+              "caption": "Отчество",
+              "hidden": true,
+              "index": 6
+            }
+          ],
+          "index": 5,
+          "type": "standard",
+          "caption": "Менеджер",
+          "name": "менеджер",
+          "relatedTo": "i-i-s-123-менеджер",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Фамилия",
+          "lookupValueField": "фамилия",
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": true,
+              "index": 8
+            }
+          ],
+          "index": 7,
+          "type": "standard",
+          "caption": "Клиент",
+          "name": "клиент",
+          "relatedTo": "i-i-s-123-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": [
+        {
+          "projectionName": "ОплатаE",
+          "caption": "Оплата",
+          "name": "оплата",
+          "relatedTo": "i-i-s-123-оплата",
+          "inverse": null
+        },
+        {
+          "projectionName": "ТоварыE",
+          "caption": "Товары",
+          "name": "товары",
+          "relatedTo": "i-i-s-123-товары",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "ЗаказL",
+      "modelName": "i-i-s-123-заказ",
+      "attrs": [
+        {
+          "name": "номерЗаказа",
+          "caption": "Номер заказа",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "доставка",
+          "caption": "Доставка",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Товар",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "свойства",
+              "caption": "Свойства",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Свойства",
+          "name": "товар",
+          "relatedTo": "i-i-s-123-товар",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Менеджер",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "отчество",
+              "caption": "Отчество",
+              "hidden": false,
+              "index": 4
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Отчество",
+          "name": "менеджер",
+          "relatedTo": "i-i-s-123-менеджер",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Клиент",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фамилия",
+              "caption": "Фамилия",
+              "hidden": false,
+              "index": 5
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Фамилия",
+          "name": "клиент",
+          "relatedTo": "i-i-s-123-клиент",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

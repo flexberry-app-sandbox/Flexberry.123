@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-123-поставщик-e",
+  "editForm": "i-i-s-123-поставщик-e",
+  "external": false,
+  "caption": "Поставщик",
+  "name": "IIS123ПоставщикL",
+  "className": "ПоставщикL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-123-поставщик",
+      "modelProjection": "ПоставщикL"
+    }
+  ]
+}

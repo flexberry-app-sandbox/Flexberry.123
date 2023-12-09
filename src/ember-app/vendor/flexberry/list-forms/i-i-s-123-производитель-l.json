@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-123-производитель-e",
+  "editForm": "i-i-s-123-производитель-e",
+  "external": false,
+  "caption": "Производитель",
+  "name": "IIS123ПроизводительL",
+  "className": "ПроизводительL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-123-производитель",
+      "modelProjection": "ПроизводительL"
+    }
+  ]
+}

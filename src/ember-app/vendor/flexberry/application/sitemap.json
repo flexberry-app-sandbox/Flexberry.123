@@ -1,0 +1,57 @@
+﻿{
+  "applicationCaption": "123",
+  "applicationTitle": "123",
+  "items": [
+    {
+      "link": null,
+      "menuName": "123",
+      "caption": "123",
+      "title": "123",
+      "children": [
+        {
+          "link": "i-i-s-123-менеджер-l",
+          "menuName": null,
+          "caption": "Менеджер",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-123-производитель-l",
+          "menuName": null,
+          "caption": "Производитель",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-123-заказ-l",
+          "menuName": null,
+          "caption": "Заказ",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-123-товар-l",
+          "menuName": null,
+          "caption": "Товар",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-123-клиент-l",
+          "menuName": null,
+          "caption": "Клиент",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-123-поставщик-l",
+          "menuName": null,
+          "caption": "Поставщик",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

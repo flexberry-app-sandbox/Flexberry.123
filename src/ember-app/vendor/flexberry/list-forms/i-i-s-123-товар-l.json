@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-123-товар-e",
+  "editForm": "i-i-s-123-товар-e",
+  "external": false,
+  "caption": "Товар",
+  "name": "IIS123ТоварL",
+  "className": "ТоварL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-123-товар",
+      "modelProjection": "ТоварL"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+﻿{
+  "name": "IIS123Поставщик",
+  "modelName": "i-i-s-123-поставщик",
+  "className": "Поставщик",
+  "nameSpace": "IIS.123",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "поставщик",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "телефон",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПоставщикE",
+      "modelName": "i-i-s-123-поставщик",
+      "attrs": [
+        {
+          "name": "телефон",
+          "caption": "Телефон",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "поставщик",
+          "caption": "Поставщик",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ПоставщикL",
+      "modelName": "i-i-s-123-поставщик",
+      "attrs": [
+        {
+          "name": "телефон",
+          "caption": "Телефон",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "поставщик",
+          "caption": "Поставщик",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

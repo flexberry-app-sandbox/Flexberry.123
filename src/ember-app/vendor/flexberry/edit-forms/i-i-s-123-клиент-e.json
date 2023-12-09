@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Клиент",
+  "name": "IIS123КлиентE",
+  "className": "КлиентE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-123-клиент",
+      "modelProjection": "КлиентE"
+    }
+  ]
+}

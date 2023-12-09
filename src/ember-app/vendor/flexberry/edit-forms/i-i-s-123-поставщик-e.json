@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Поставщик",
+  "name": "IIS123ПоставщикE",
+  "className": "ПоставщикE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-123-поставщик",
+      "modelProjection": "ПоставщикE"
+    }
+  ]
+}
